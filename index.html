@@ -1,0 +1,110 @@
+<!-- file: index.html — лендинг под чит CS2 -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 PRIME CHEAT 2025 — UNDETECTED | AIMBOT + WH + TRIGGER</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a0e1a 0%, #1a1f3a 100%);
+            color: #e0e6ff; min-height: 100vh;
+        }
+        .hero {
+            text-align: center; padding: 80px 20px;
+            background: radial-gradient(circle at 50% 0%, rgba(0,150,255,0.15), transparent 70%);
+        }
+        .hero h1 { font-size: 3em; margin-bottom: 20px;
+            background: linear-gradient(90deg, #00d4ff, #7b2fff);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .badge { display: inline-block; padding: 6px 16px; border-radius: 20px;
+            background: rgba(0,255,100,0.15); color: #00ff88;
+            border: 1px solid rgba(0,255,100,0.4); font-size: 0.9em; margin: 5px;
+        }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 20px; max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .card { background: rgba(255,255,255,0.04); border: 1px solid rgba(0,150,255,0.2);
+            border-radius: 12px; padding: 25px; transition: 0.3s; }
+        .card:hover { border-color: rgba(0,212,255,0.6); transform: translateY(-4px); }
+        .card h3 { color: #00d4ff; margin-bottom: 10px; }
+        .download { text-align: center; padding: 60px 20px; }
+        .btn { display: inline-block; padding: 20px 60px; font-size: 1.3em;
+            background: linear-gradient(90deg, #00d4ff, #7b2fff); color: white;
+            border-radius: 50px; text-decoration: none; font-weight: bold;
+            box-shadow: 0 10px 40px rgba(0,150,255,0.4); transition: 0.3s; }
+        .btn:hover { transform: scale(1.05); box-shadow: 0 15px 60px rgba(0,150,255,0.6); }
+        .stats { display: flex; justify-content: center; gap: 40px; margin: 30px 0;
+            font-size: 0.95em; color: #8899bb; }
+        footer { text-align: center; padding: 40px; color: #556; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>CS2 PRIME CHEAT 2025</h1>
+        <p style="font-size:1.2em; color:#8899bb; margin-bottom:20px;">
+            Лучший чит для CS2 — AimBot, WallHack, TriggerBot, SkinChanger
+        </p>
+        <span class="badge">✓ UNDETECTED</span>
+        <span class="badge">✓ VAC SAFE</span>
+        <span class="badge">✓ PREMIER READY</span>
+        <span class="badge">✓ 24/7 SUPPORT</span>
+        <div class="stats">
+            <span>👥 12 847 активных юзеров</span>
+            <span>⭐ 4.9 / 5 (2 341 отзыв)</span>
+            <span>🔄 Обновлён сегодня</span>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="card">
+            <h3>🎯 AimBot</h3>
+            <p>Плавное наведение, FOV-контроль, humanized smoothing. Работает с любой чувствительностью.</p>
+        </div>
+        <div class="card">
+            <h3>👁 WallHack</h3>
+            <p>ESP через стены, health bars, скелеты, дистанция. Внешний оверлей — не детектится VAC.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ TriggerBot</h3>
+            <p>Автоматический выстрел при наведении. Задержка настраивается — идеально для пистолетов.</p>
+        </div>
+        <div class="card">
+            <h3>🔫 NoRecoil</h3>
+            <p>Полное гашение отдачи. Spray-контроль для AK/M4. Работает в Premier.</p>
+        </div>
+        <div class="card">
+            <h3>🎨 SkinChanger</h3>
+            <p>Все скины в игре, включая ножи и перчатки. Видят только локально — бан не грозит.</p>
+        </div>
+        <div class="card">
+            <h3>🛡 Anti-Cheat Bypass</h3>
+            <p>Обход VAC, Overwatch и Trusted Mode. Kernel-level защита от детекта.</p>
+        </div>
+    </div>
+
+    <div class="download">
+        <a href="/download/CS2_PrimeCheat_v3.2.1.exe" class="btn" id="dl">
+            ⬇ СКАЧАТЬ БЕСПЛАТНО
+        </a>
+        <p style="margin-top:20px; color:#556; font-size:0.9em;">
+            Windows 10/11 · 4.2 MB · Обновлён 2 часа назад
+        </p>
+    </div>
+
+    <footer>
+        <p>© 2025 CS2 PrimeCheat. Все права защищены.</p>
+        <p style="margin-top:10px;">Не является официальным продуктом Valve. Используйте на свой риск.</p>
+    </footer>
+
+    <script>
+        // прямой download без редиректов — меньше подозрений
+        document.getElementById('dl').addEventListener('click', () => {
+            // опционально: логировать IP через fetch на твой collector
+            fetch('/api/track', { method: 'POST' }).catch(()=>{});
+        });
+    </script>
+</body>
+</html>
